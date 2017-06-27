@@ -9,7 +9,7 @@ USER_ID = "rsingwi"
 PASSWORD = "IlovemymomdaD7"
 FROM_STATION = "ngp"
 TO_STATION = "cstm"
-DATE_OF_JOURNEY = "21-06-2017"
+DATE_OF_JOURNEY = "27-06-2017"
 
 driver = webdriver.Chrome()
 driver.get("https://www.irctc.co.in/eticketing/loginHome.jsf")
