@@ -6,14 +6,14 @@ from selenium.common.exceptions import TimeoutException
 
 driver = webdriver.Chrome()
 driver.get("https://www.irctc.co.in/eticketing/loginHome.jsf")
-CAPTCHA = raw_input("Enter the captcha :\n")
+
 
 #Enter your username and password below
 USER_ID = "rsingwi"
 PASSWORD = "IlovemymomdaD7"
 FROM_STATION = "ngp"
 TO_STATION = "cstm"
-DATE_OF_JOURNEY = "02-07-2017"
+DATE_OF_JOURNEY = "06-07-2017"
 NAME = "Raunak Singwi"
 AGE = 20
 GENDER = "M" #Type exactly like 'M' or 'F'
@@ -29,6 +29,7 @@ submit = driver.find_element_by_id("loginbutton")
 
 userid.send_keys(USER_ID)
 password.send_keys(PASSWORD)
+CAPTCHA = raw_input("Enter the captcha :\n")
 captcha.send_keys(CAPTCHA)
 submit.click()
 #logged in
