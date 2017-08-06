@@ -9,17 +9,17 @@ driver.get("https://www.irctc.co.in/eticketing/loginHome.jsf")
 
 
 #Enter your username and password below
-USER_ID = "rsingwi"
-PASSWORD = "IlovemymomdaD7"
-FROM_STATION = "ngp"
-TO_STATION = "cstm"
-DATE_OF_JOURNEY = "06-07-2017"
-NAME = "Raunak Singwi"
-AGE = 20
-GENDER = "M" #Type exactly like 'M' or 'F'
-BED_ROLL = 'Y' #Type 'y' or 'n'
+USER_ID = raw_input("Enter user_id :\n")
+PASSWORD = raw_input("Enter password :\n")
+FROM_STATION = raw_input("Enter boarding station id :\n")
+TO_STATION = raw_input("Enter destination station id :\n")
+DATE_OF_JOURNEY = raw_input("Enter date of journey (dd/mm/yyyy) :\n")
+NAME = raw_input("Enter Name of passanger :\n")
+AGE = int(raw_input("Enter age of passanger :\n"))
+GENDER = raw_input("Enter gender of passanger (M or F) :\n") #Type exactly like 'M' or 'F'
+BED_ROLL = raw_input("Is bed roll wanted (y or n) :\n") #Type 'y' or 'n'
 
-
+raw_input("Press enter to start")
 
 #login page
 userid = driver.find_element_by_name("j_username")
